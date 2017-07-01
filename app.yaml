@@ -1,0 +1,18 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: ssl
+  version: latest
+
+handlers:
+- url: /.*
+  script: app.app
+
+env_variables:
+ SLACK_API_TOKEN: 'xoxp-2160581302-199421189873-206711690389-6270f8ac75ce8ff233ae08f367a35b09'
+ REDIS_URL: 'redis://:sWvi2mFd@35.188.0.40:6379'
+ SLACK_WEBHOOK_URL: 'https://hooks.slack.com/services/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'
+ TRANSLATE_ENGINE: 'google'
+ GOOGLE_API_KEY: 'AIzaSyDjR8W6bKo54_yI0hazfTikTnMRNzaCmGs'
